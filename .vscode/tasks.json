@@ -1,0 +1,102 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "run-train",
+			"type": "shell",
+			"command": "c:\\Users\\giraf\\OneDrive\\Área de Trabalho\\modelo\\.venv\\Scripts\\python.exe",
+			"args": [
+				"choquet_anfis\\main.py"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "run-train-precision-floor",
+			"type": "shell",
+			"command": "c:\\Users\\giraf\\OneDrive\\Área de Trabalho\\modelo\\.venv\\Scripts\\python.exe",
+			"args": [
+				"choquet_anfis\\main.py",
+				"--threshold-mode",
+				"precision_floor",
+				"--min-precision",
+				"0.60"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "run-train-reweight",
+			"type": "shell",
+			"command": "c:\\Users\\giraf\\OneDrive\\Área de Trabalho\\modelo\\.venv\\Scripts\\python.exe",
+			"args": [
+				"choquet_anfis\\main.py",
+				"--threshold-mode",
+				"precision_floor",
+				"--min-precision",
+				"0.60",
+				"--reweight-epochs",
+				"10",
+				"--reweight-patience",
+				"3",
+				"--reweight-min-delta",
+				"0.0005"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "run-train-balanced-accuracy",
+			"type": "shell",
+			"command": "c:\\Users\\giraf\\OneDrive\\Área de Trabalho\\modelo\\.venv\\Scripts\\python.exe",
+			"args": [
+				"choquet_anfis\\main.py",
+				"--threshold-mode",
+				"balanced_accuracy"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "run-train-describe-scores",
+			"type": "shell",
+			"command": "c:\\Users\\giraf\\OneDrive\\Área de Trabalho\\modelo\\.venv\\Scripts\\python.exe",
+			"args": [
+				"choquet_anfis\\main.py",
+				"--describe-scores"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "run-train-after-orientation-fix",
+			"type": "shell",
+			"command": "c:\\Users\\giraf\\OneDrive\\Área de Trabalho\\modelo\\.venv\\Scripts\\python.exe",
+			"args": [
+				"choquet_anfis\\main.py"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "run-auto-q-balanced",
+			"type": "shell",
+			"command": "c:\\Users\\giraf\\OneDrive\\Área de Trabalho\\modelo\\.venv\\Scripts\\python.exe",
+			"args": [
+				"choquet_anfis\\main.py",
+				"--auto-q",
+				"--threshold-mode",
+				"balanced_accuracy"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
