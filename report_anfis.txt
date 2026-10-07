@@ -1,0 +1,56 @@
+MODEL: ChoquetANFISScorer
+======================================================================
+
+Features used: 39
+q: 1.000000
+Threshold: -0.014712
+Score orientation: -1.0
+
+Train metrics
+Accuracy          : 0.9106
+Balanced accuracy : 0.6047
+Precision         : 0.3728
+Recall            : 0.2435
+Specificity       : 0.9660
+FPR               : 0.0340
+F1                : 0.2946
+ROC AUC           : 0.7592
+PR AUC            : 0.2420
+Confusion matrix:
+[[186951   6577]
+ [ 12150   3910]]
+Classification report:
+              precision    recall  f1-score   support
+
+           0     0.9390    0.9660    0.9523    193528
+           1     0.3728    0.2435    0.2946     16060
+
+    accuracy                         0.9106    209588
+   macro avg     0.6559    0.6047    0.6234    209588
+weighted avg     0.8956    0.9106    0.9019    209588
+
+
+======================================================================
+Test metrics
+Accuracy          : 0.9559
+Balanced accuracy : 0.7005
+Precision         : 0.5017
+Recall            : 0.4204
+Specificity       : 0.9807
+FPR               : 0.0193
+F1                : 0.4575
+ROC AUC           : 0.7745
+PR AUC            : 0.3401
+Confusion matrix:
+[[37017   729]
+ [ 1012   734]]
+Classification report:
+              precision    recall  f1-score   support
+
+           0     0.9734    0.9807    0.9770     37746
+           1     0.5017    0.4204    0.4575      1746
+
+    accuracy                         0.9559     39492
+   macro avg     0.7375    0.7005    0.7172     39492
+weighted avg     0.9525    0.9559    0.9541     39492
+

@@ -1,0 +1,54 @@
+MODEL: SupervisedChoquetANFIS
+======================================================================
+Features: ['Max', 'Tot size', 'Std', 'IAT', 'psh_flag_number', 'Min', 'Header_Length', 'UDP']
+q: 0.75
+blend: 0.25
+threshold: 0.4136716482582746
+
+Train metrics
+Accuracy          : 0.8638
+Balanced accuracy : 0.7768
+Precision         : 0.3171
+Recall            : 0.6741
+Specificity       : 0.8795
+FPR               : 0.1205
+F1                : 0.4313
+ROC AUC           : 0.8097
+PR AUC            : 0.2963
+Confusion matrix:
+[[170209  23319]
+ [  5234  10826]]
+Classification report:
+              precision    recall  f1-score   support
+
+           0     0.9702    0.8795    0.9226    193528
+           1     0.3171    0.6741    0.4313     16060
+
+    accuracy                         0.8638    209588
+   macro avg     0.6436    0.7768    0.6769    209588
+weighted avg     0.9201    0.8638    0.8850    209588
+
+
+======================================================================
+Test metrics
+Accuracy          : 0.8039
+Balanced accuracy : 0.7248
+Precision         : 0.1354
+Recall            : 0.6380
+Specificity       : 0.8115
+FPR               : 0.1885
+F1                : 0.2234
+ROC AUC           : 0.8007
+PR AUC            : 0.3922
+Confusion matrix:
+[[30632  7114]
+ [  632  1114]]
+Classification report:
+              precision    recall  f1-score   support
+
+           0     0.9798    0.8115    0.8878     37746
+           1     0.1354    0.6380    0.2234      1746
+
+    accuracy                         0.8039     39492
+   macro avg     0.5576    0.7248    0.5556     39492
+weighted avg     0.9425    0.8039    0.8584     39492

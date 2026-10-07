@@ -1,0 +1,55 @@
+MODEL: Improved Cross-Fitted Choquet-ANFIS
+======================================================================
+Features: ['Max', 'Tot size', 'Std', 'IAT', 'psh_flag_number', 'Min', 'Header_Length', 'UDP']
+Base config: BaseConfig(n_mfs=3, mf_width=1.0, clip_quantile=0.005, weight_power=1.0, log_transform=True)
+q: 2.0
+blend: 0.75
+threshold: 0.4591036368819379
+
+Train OOF metrics
+Accuracy          : 0.9336
+Balanced accuracy : 0.6917
+Precision         : 0.5980
+Recall            : 0.4060
+Specificity       : 0.9774
+FPR               : 0.0226
+F1                : 0.4836
+ROC AUC           : 0.8323
+PR AUC            : 0.4392
+Confusion matrix:
+[[189145   4383]
+ [  9540   6520]]
+Classification report:
+              precision    recall  f1-score   support
+
+           0     0.9520    0.9774    0.9645    193528
+           1     0.5980    0.4060    0.4836     16060
+
+    accuracy                         0.9336    209588
+   macro avg     0.7750    0.6917    0.7241    209588
+weighted avg     0.9249    0.9336    0.9277    209588
+
+
+======================================================================
+Test metrics
+Accuracy          : 0.9639
+Balanced accuracy : 0.8074
+Precision         : 0.5845
+Recall            : 0.6357
+Specificity       : 0.9791
+FPR               : 0.0209
+F1                : 0.6091
+ROC AUC           : 0.8358
+PR AUC            : 0.6130
+Confusion matrix:
+[[36957   789]
+ [  636  1110]]
+Classification report:
+              precision    recall  f1-score   support
+
+           0     0.9831    0.9791    0.9811     37746
+           1     0.5845    0.6357    0.6091      1746
+
+    accuracy                         0.9639     39492
+   macro avg     0.7838    0.8074    0.7951     39492
+weighted avg     0.9655    0.9639    0.9646     39492
